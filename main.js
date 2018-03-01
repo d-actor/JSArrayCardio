@@ -98,9 +98,9 @@ const alpha = people.sort((lastOne, nextOne) => {
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
-const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick', 'heelys', 'pogostick' ];
 
-const transport = data.reduce(function(obj, item) {
+const transport = data.reduce((obj, item) => {
   if(!obj[item]) {
     obj[item] = 0;
   }
